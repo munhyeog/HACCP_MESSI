@@ -97,6 +97,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="base_info\InfoCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base_info\InfoCompanyForm.Designer.cs">
+      <DependentUpon>InfoCompanyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseInfo.cs" />
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
@@ -143,6 +149,9 @@
     <Compile Include="WorkOrderForm.Designer.cs">
       <DependentUpon>WorkOrderForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="base_info\InfoCompanyForm.resx">
+      <DependentUpon>InfoCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,9 +222,11 @@
     <None Include="png\loop-circular-2x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="base_info\" />
     <Folder Include="manage_prod\" />
     <Folder Include="manage_sales\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="png\HACCP_MESSI_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,13 +34,14 @@
             this.lblID = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(91, 141);
+            this.txtPassword.Location = new System.Drawing.Point(91, 154);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(119, 21);
@@ -48,7 +49,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(91, 98);
+            this.txtID.Location = new System.Drawing.Point(91, 111);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(119, 21);
             this.txtID.TabIndex = 7;
@@ -56,28 +57,28 @@
             // lblPW
             // 
             this.lblPW.AutoSize = true;
-            this.lblPW.Font = new System.Drawing.Font("문체부 돋음체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPW.Location = new System.Drawing.Point(48, 141);
+            this.lblPW.Font = new System.Drawing.Font("함초롬돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblPW.Location = new System.Drawing.Point(48, 149);
             this.lblPW.Name = "lblPW";
-            this.lblPW.Size = new System.Drawing.Size(37, 21);
+            this.lblPW.Size = new System.Drawing.Size(45, 27);
             this.lblPW.TabIndex = 6;
             this.lblPW.Text = "PW";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("문체부 돋음체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblID.Location = new System.Drawing.Point(48, 98);
+            this.lblID.Font = new System.Drawing.Font("함초롬돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblID.Location = new System.Drawing.Point(48, 106);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(29, 21);
+            this.lblID.Size = new System.Drawing.Size(34, 27);
             this.lblID.TabIndex = 5;
             this.lblID.Text = "ID";
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnLogin.Font = new System.Drawing.Font("문체부 돋음체", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnLogin.Location = new System.Drawing.Point(231, 93);
+            this.btnLogin.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnLogin.Location = new System.Drawing.Point(231, 106);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 10;
@@ -88,8 +89,8 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnClose.Font = new System.Drawing.Font("문체부 돋음체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnClose.Location = new System.Drawing.Point(231, 151);
+            this.btnClose.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.Location = new System.Drawing.Point(231, 164);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 11;
@@ -97,21 +98,11 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 53);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "MES Solution";
-            // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnRegister.Font = new System.Drawing.Font("문체부 돋음체", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRegister.Location = new System.Drawing.Point(231, 122);
+            this.btnRegister.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnRegister.Location = new System.Drawing.Point(231, 135);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 14;
@@ -119,13 +110,24 @@
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox1.Image = global::mes.Properties.Resources.HACCP_MESSI_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(253, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 210);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
@@ -134,7 +136,8 @@
             this.Controls.Add(this.lblID);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginForm";
+            this.Text = "MESSI";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,7 +150,7 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

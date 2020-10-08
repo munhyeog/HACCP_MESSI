@@ -1,13 +1,14 @@
-﻿using System;
+﻿using mes.base_info;
+using System;
 using System.Windows.Forms;
 
 namespace mes
 {
     public partial class MainForm : Form
     {
-        LoginForm loginForm;
-        OrderInfoForm orderInfoForm;
-        WorkOrderForm workOrderForm;
+        LoginForm loginForm;                // 로그인 폼
+        InfoCompanyForm infoCompanyForm;    // 거래처정보 폼
+
         public MainForm()
         {
             InitializeComponent();
@@ -69,45 +70,20 @@ namespace mes
             Dispose();
         }
 
-
-
-        private void 주문내역ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 거래처관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.ActiveMdiChild != null)
             {
-                if (this.ActiveMdiChild != orderInfoForm)
+                if (this.ActiveMdiChild != infoCompanyForm)
                 {
                     ActiveMdiChild.Close();
                 }
-                orderInfoForm = ShowActivityForm(orderInfoForm, typeof(OrderInfoForm)) as OrderInfoForm;
+                infoCompanyForm = ShowActivityForm(infoCompanyForm, typeof(InfoCompanyForm)) as InfoCompanyForm;
             }
             else
             {
-                orderInfoForm = ShowActivityForm(orderInfoForm, typeof(OrderInfoForm)) as OrderInfoForm;
+                infoCompanyForm = ShowActivityForm(infoCompanyForm, typeof(InfoCompanyForm)) as InfoCompanyForm;
             }
         }
-
-      
-        private void 발주등록ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //github test
-        }
-
-        private void 작업지시등록ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (this.ActiveMdiChild != null)
-            {
-                if (this.ActiveMdiChild != workOrderForm)
-                {
-                    ActiveMdiChild.Close();
-                }
-                workOrderForm = ShowActivityForm(workOrderForm, typeof(WorkOrderForm)) as WorkOrderForm;
-            }
-            else
-            {
-                workOrderForm = ShowActivityForm(workOrderForm, typeof(WorkOrderForm)) as WorkOrderForm;
-            }
-        }
-
     }
 }
