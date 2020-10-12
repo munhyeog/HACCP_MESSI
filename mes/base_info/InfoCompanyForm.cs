@@ -17,10 +17,6 @@ namespace mes.base_info
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
         DataTable dt;
-        // test
-        //dfdf
-        //dfdfd//
-        //dfdfdf
         public InfoCompanyForm()
         {
             InitializeComponent();
